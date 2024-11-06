@@ -1,3 +1,14 @@
+nav {
+  border-bottom: 1px solid silver;
+  padding: 16px;
+  display:  flex;
+  justify-content: center;
+}
+
+nav > a{
+  margin-left: 15px;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
