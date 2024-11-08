@@ -30,7 +30,7 @@ export default function RootLayout({
         <nav>
           <Link href="/">Home</Link>
           <Link href="/doc-entry">企画書・エントリー</Link>
-          <Link href="/sche-entry">スケジュール・お知らせ</Link>
+          <Link href="/sche-info">スケジュール・お知らせ</Link>
           <Link href="/rule-example">例題・ルール詳細説明</Link>
           <Link href="/about">サークル・サークルキャラクター紹介</Link>
         </nav>
