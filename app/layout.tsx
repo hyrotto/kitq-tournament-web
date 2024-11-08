@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
+import { UIProvider, Button } from "@yamada-ui/react"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <UIProvider>
         <nav>
           <Link href="/">Home</Link>
           <Link href="/doc-entry">企画書・エントリー</Link>
@@ -34,7 +36,8 @@ export default function RootLayout({
           <Link href="/rule-example">例題・ルール詳細説明</Link>
           <Link href="/about">サークル・サークルキャラクター紹介</Link>
         </nav>
-        {children}
+          {children}
+        </UIProvider>
       </body>
     </html>
   );
