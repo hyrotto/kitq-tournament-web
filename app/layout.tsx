@@ -1,11 +1,25 @@
 'use client';
 
 import "./globals.css";
-import { UIProvider, Box ,Image, Menu, MenuButton, MenuItem, MenuList} from "@yamada-ui/react"
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink ,BreadcrumbEllipsis} from "@yamada-ui/react"
 import { useState, useEffect } from "react";
-import Link from "next/link";
+// UIコンポーネント
+import {UIProvider, 
+  Box,
+  Image,
+  Menu,
+  MenuButton, 
+  MenuItem, 
+  MenuList
+} from "@yamada-ui/react"
+// ナビゲーションパスを表示に関するコンポーネント
+import {
+  Breadcrumb, 
+  BreadcrumbItem, 
+  BreadcrumbLink,
+  BreadcrumbEllipsis
+} from "@yamada-ui/react"
 
+// ルートコンポーネント
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -13,7 +27,7 @@ export default function RootLayout({
 }>) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  // 画面幅が狭くなったときの状態を監視
+  // コンポーネントが描画されるときに実行される処理
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 650); // 600px以下で切り替え
@@ -25,8 +39,6 @@ export default function RootLayout({
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-
-  
   return (
     <html lang="ja">
       <body>
