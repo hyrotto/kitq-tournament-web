@@ -25,12 +25,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  // clientでの初期レンダリングを実行するために、初期値にnullを設定
+  const [isSmallScreen, setIsSmallScreen] = useState<boolean | null>(null); 
 
-  // コンポーネントが描画されるときに実行される処理
+  // 画面のリサイズに応じて状態を更新
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 650); // 600px以下で切り替え
+      setIsSmallScreen(window.innerWidth < 650);
     };
 
     window.addEventListener("resize", handleResize);
@@ -38,6 +39,10 @@ export default function RootLayout({
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  if (isSmallScreen === null) {
+    return null; 
+  }
 
   return (
     <html lang="ja">
