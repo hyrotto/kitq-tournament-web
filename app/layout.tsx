@@ -123,6 +123,11 @@ export default function RootLayout({
               )}
           </nav>
           {children}
+          <footer>
+              <Box className="footer" p="4" bg="gray.200" textAlign="center">
+                  <p>九州工業大学 クイズサークル Q-thch</p>
+              </Box>
+          </footer>
         </UIProvider>
       </body>
     </html>
