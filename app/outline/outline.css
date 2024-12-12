@@ -1,0 +1,8 @@
+#cute_cat {
+    border-bottom: 1px solid silver;
+    padding: 16px;
+    display:  flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
