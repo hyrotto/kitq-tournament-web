@@ -166,3 +166,19 @@ a.secondary {
     filter: invert();
   }
 }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.infoBox {
+  height: 100px;
+  width: 900px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
