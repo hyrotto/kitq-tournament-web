@@ -176,6 +176,7 @@ a.secondary {
 
 .infoBox {
   height: 100px;
+  min-height: 100px;
   width: 900px;
   overflow-y: scroll;
   border: 1px solid #ccc;
@@ -214,6 +215,6 @@ a.secondary {
 .Nichci {
   font-size: 2rem;
   position: absolute;
-  right: 20rem;
-  bottom: -2rem; /* 右下に配置 */
+  right: 22rem;
+  bottom: -1rem; /* 右下に配置 */
 }
