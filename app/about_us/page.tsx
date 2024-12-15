@@ -3,7 +3,7 @@ import {
   NativeImage
 } from "@yamada-ui/react"
 
-export default async function Home() {
+export default async function AboutUs() {
     return (
       <div>
         <h1>キャラクター紹介</h1>

@@ -3,7 +3,8 @@
 import "./globals.css";
 import { useState, useEffect } from "react";
 // UIコンポーネント
-import {UIProvider, 
+import {
+  UIProvider, 
   Box,
   Link,
   NativeImage,
