@@ -3,20 +3,11 @@
 import "./globals.css";
 import { useState, useEffect } from "react";
 // UIコンポーネント
-import {UIProvider, 
-  Box,
-  Image,
-  Menu,
-  MenuButton, 
-  MenuItem, 
-  MenuList
-} from "@yamada-ui/react"
-// ナビゲーションパスを表示に関するコンポーネント
 import {
-  Breadcrumb, 
-  BreadcrumbItem, 
-  BreadcrumbLink,
-  BreadcrumbEllipsis
+  UIProvider, 
+  Box,
+  Link,
+  NativeImage,
 } from "@yamada-ui/react"
 
 // ルートコンポーネント
@@ -48,80 +39,31 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         <UIProvider>
-          <nav>
-            <Box id = "logo">
-              <Image 
-                src="/cute_cat.png" 
-                w = "8"
-                h = "8" 
+          <header>
+            <Link  className="header_logo" href="/" >
+              <NativeImage 
+                src="/大会ロゴ_モック.png" 
+                w = "40" 
                 alt=""
                 p = "2"
               />
-              KITQ杯(仮)
-            </Box>
+            </Link>
             {!isSmallScreen ? (
-                <Breadcrumb className="LinkBox">
-                  <BreadcrumbItem>
-                    <BreadcrumbLink href="/" className="navLink">
-                      Home
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink href="/doc-entry" className="navLink">
-                      企画書・エントリー
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink  href="/sche-info" className="navLink">
-                      スケジュール・お知らせ
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink href="/rule-example" className="navLink">
-                      例題・ルール詳細説明
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                  <BreadcrumbItem>
-                    <BreadcrumbLink href="/about" className="navLink">
-                      サークル・キャラクター紹介
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                </Breadcrumb>
+                <Box className="nav_button">
+                  <Link href="/outline">大会概要</Link>
+                  <Link href="/entry">エントリー</Link>
+                  <Link href="/about_us">キャラクター紹介</Link>
+                  <Link href="/info">お知らせ</Link>
+                </Box>
               ) : (
-                <Box className="LinkBox">
-                  <Breadcrumb>
-                    <BreadcrumbItem>
-                      <BreadcrumbLink href="/" className="navLink">
-                        Home
-                      </BreadcrumbLink>
-                    </BreadcrumbItem>
-                    <BreadcrumbItem>
-                      <BreadcrumbLink href="/doc-entry" className="navLink">
-                        企画書・エントリー
-                      </BreadcrumbLink>
-                    </BreadcrumbItem>
-                    <BreadcrumbItem>
-                      <Menu>
-                        <MenuButton>
-                          <BreadcrumbEllipsis />
-                        </MenuButton>
-                        <MenuList>
-                          <MenuItem as="a" href="/sche-info" className="navLink">
-                            スケジュール・お知らせ
-                          </MenuItem>
-                          <MenuItem as="a" href="/rule-example" className="navLink">
-                            例題・ルール詳細説明
-                          </MenuItem>
-                          <MenuItem as="a" href="/about" className="navLink">
-                            サークル・キャラクター紹介
-                          </MenuItem>
-                        </MenuList>
-                      </Menu>
-                    </BreadcrumbItem>
-                  </Breadcrumb>
+                <Box className="nav_button">
+                  <Link href="/outline">大会概要</Link>
+                  <Link href="/entry">エントリー</Link>
+                  <Link href="/about_us">キャラクター紹介</Link>
+                  <Link href="/info">お知らせ</Link>
                 </Box>
               )}
-          </nav>
+          </header>
           {children}
           <footer>
               <Box className="footer" p="4" bg="gray.200" textAlign="center">

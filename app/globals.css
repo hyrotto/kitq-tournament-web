@@ -1,21 +1,13 @@
-nav {
+header {
   border-bottom: 1px solid silver;
   padding: 2px;
   display:  flex;
   justify-content: space-between;
   align-items: center;
 }
-#logo{
-  width: 20%;
-  padding-right:"5px"; 
-  display: "flex"; 
-  justify-content :"center" ;
-  align-items : "center"; 
-  font-size: small;
-  white-space: nowrap;
-}
-#logo img{
-  vertical-align: middle
+
+.header_logo:hover{
+  transform: scale(1.05);
 }
 
 #LinkBox{
@@ -27,13 +19,24 @@ nav {
   background-color: "blackAlpha.500";
   flex-wrap: nowrap;
 }
-.navLink{
-  white-space: nowrap;
-  font-size: x-small;
-  text-decoration: none;
+
+.nav_button {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
 }
-.navLink:hover{
+
+.nav_button a {
   text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav_button a:hover {
+  color: #ff6600;         /* ホバー時の文字色 */
+  transform: scale(1.1);  /* ホバー時に少し拡大 */
 }
 
 :root {
