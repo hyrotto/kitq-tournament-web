@@ -26,7 +26,12 @@ export default function Home() {
         </ul>
       </div>
 
-      <h1>大会まで残り: {remainingDays}日</h1>
+      <div className={styles.countdown}>
+        <h1 className={styles.text}>3月2日  大会当日まで</h1>
+        <h1 className={styles.Ato}>あと</h1>
+        <h1 className={styles.days}>{remainingDays}</h1>
+        <h1 className={styles.Nichci}>日</h1>
+      </div>
     </div>
   );
 }

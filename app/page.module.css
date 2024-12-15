@@ -182,3 +182,38 @@ a.secondary {
   padding: 10px;
 }
 
+.countdown {
+  height: 200px;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* 親要素に相対位置を設定 */
+  gap: 5px;
+}
+
+.text {
+  font-size: 3rem;
+  font-weight: bold;
+  position: absolute;
+  top: -4rem; /* 適切な位置に調整 */
+}
+
+.Ato {
+  font-size: 2rem;
+  position: absolute;
+  left:20rem;
+  top: 0rem; /* 左上に配置 */
+}
+
+.days {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.Nichci {
+  font-size: 2rem;
+  position: absolute;
+  right: 20rem;
+  bottom: -2rem; /* 右下に配置 */
+}
