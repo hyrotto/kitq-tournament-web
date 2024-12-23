@@ -12,7 +12,11 @@ export default async function Entry() {
           エントリーは<span>XX月XX日(金)21:30</span>より開始いたします。
         </div>
         ↓エントリーフォームはこちら
-        <Link className={styles.EntryButton}>
+        <Link
+          href="https://docs.google.com/forms/d/1fAGluT52B6bY1E9g1r4hZh7JZjYaeGWC2rJblkl0Z-c/edit"
+          target="_blank"
+          className={styles.EntryButton}
+          >
           エントリーフォーム
         </Link>
       </div>
