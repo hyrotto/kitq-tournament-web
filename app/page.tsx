@@ -13,7 +13,7 @@ export default function Home() {
     <div className={styles.page}>
       <NativeImage
         src="大会メインイラスト_モック2.png"
-        h="600"
+        h="500"
       />
       
       <div className={styles.infoBox}>

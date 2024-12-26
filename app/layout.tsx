@@ -7,6 +7,12 @@ import {
   Box,
   Link,
   NativeImage,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Button,
+  ChevronIcon,
 } from "@yamada-ui/react"
 
 // ルートコンポーネント
@@ -22,6 +28,7 @@ export default function RootLayout({
           <header>
             <Link  className="header_logo" href="/" >
               <NativeImage 
+                className="header_logo_image"
                 src="/大会ロゴ_モック.png" 
                 w = "40" 
                 alt=""
@@ -34,6 +41,19 @@ export default function RootLayout({
               <Link href="/about_us">キャラクター紹介</Link>
               <Link href="/info">お知らせ</Link>
             </Box>
+            <span className="nav_menu">
+              <Menu>
+                <MenuButton as={Button} rightIcon={<ChevronIcon fontSize="xl" />}>
+                  メニュー
+                </MenuButton>
+                <MenuList>
+                  <MenuItem><Link href="/outline">大会概要</Link></MenuItem>
+                  <MenuItem><Link href="/entry">エントリー</Link></MenuItem>
+                  <MenuItem><Link href="/about_us">キャラクター紹介</Link></MenuItem>
+                  <MenuItem><Link href="/info">お知らせ</Link></MenuItem>
+                </MenuList>
+              </Menu>
+            </span>
           </header>
           {children}
           <footer>
