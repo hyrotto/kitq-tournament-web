@@ -1,7 +1,6 @@
 'use client';
 
 import "./globals.css";
-import { useState, useEffect } from "react";
 // UIコンポーネント
 import {
   UIProvider, 
@@ -16,25 +15,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // clientでの初期レンダリングを実行するために、初期値にnullを設定
-  const [isSmallScreen, setIsSmallScreen] = useState<boolean | null>(null); 
-
-  // 画面のリサイズに応じて状態を更新
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 650);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  if (isSmallScreen === null) {
-    return null; 
-  }
-
   return (
     <html lang="ja">
       <body>
@@ -48,21 +28,12 @@ export default function RootLayout({
                 p = "2"
               />
             </Link>
-            {!isSmallScreen ? (
-                <Box className="nav_button">
-                  <Link href="/outline">大会概要</Link>
-                  <Link href="/entry">エントリー</Link>
-                  <Link href="/about_us">キャラクター紹介</Link>
-                  <Link href="/info">お知らせ</Link>
-                </Box>
-              ) : (
-                <Box className="nav_button">
-                  <Link href="/outline">大会概要</Link>
-                  <Link href="/entry">エントリー</Link>
-                  <Link href="/about_us">キャラクター紹介</Link>
-                  <Link href="/info">お知らせ</Link>
-                </Box>
-              )}
+            <Box className="nav_button">
+              <Link href="/outline">大会概要</Link>
+              <Link href="/entry">エントリー</Link>
+              <Link href="/about_us">キャラクター紹介</Link>
+              <Link href="/info">お知らせ</Link>
+            </Box>
           </header>
           {children}
           <footer>
