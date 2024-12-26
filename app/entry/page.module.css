@@ -1,0 +1,50 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.TitleText{
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.DescriptionText{
+  font-size: 1rem;
+  padding: 30px;
+  margin-top: 10px;
+}
+.DescriptionText span{
+  color: red;
+}
+
+.container .EntryButton {
+  padding: 30px 100px;
+  margin-top: 3px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  outline: 5px solid #ff9900;
+  border: 3px solid #ff6600; /* 内側の線 */
+}
+
+.container .EntryButton:hover {
+  background-color: #a04000;  /* ホバー時の背景色 */
+  text-decoration: none;
+}
+
+.container .EntryListText {
+  text-align: center;
+  width: 90%;
+  font-size: 1.1em;
+  padding: 40px;
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  display: inline-block;
+}
