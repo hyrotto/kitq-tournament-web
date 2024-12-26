@@ -37,3 +37,14 @@
   background-color: #a04000;  /* ホバー時の背景色 */
   text-decoration: none;
 }
+
+.container .EntryListText {
+  text-align: center;
+  width: 90%;
+  font-size: 1.1em;
+  padding: 40px;
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  display: inline-block;
+}
