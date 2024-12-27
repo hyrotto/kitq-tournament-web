@@ -72,3 +72,41 @@
   bottom: -1rem;
   color: var(--text-color);
 }
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 2rem;
+    top: -3rem;
+  }
+  .Ato{
+    font-size: 2rem;
+    left: 25%;
+  }
+  .days {
+    font-size: 5rem;
+  }
+  .Nichci {
+    font-size: 2rem;
+    right: 25%;
+    bottom: -0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 1.5rem;
+    top: -2rem;
+  }
+  .Ato{
+    font-size: 1.5rem;
+    left: 15%;
+  }
+  .days {
+    font-size: 4rem;
+  }
+  .Nichci {
+    font-size: 1.5rem;
+    right: 15%;
+    bottom: 0rem;
+  }
+}
