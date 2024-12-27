@@ -64,3 +64,21 @@
   display: inline-block;
   color: var(--text-color);
 }
+
+@media (max-width: 600px) {
+  .TitleText {
+    font-size: 2.5rem;
+  }
+  .DescriptionText {
+    font-size: 0.9rem;
+    padding: 20px;
+  }
+  .container .EntryButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  .container .EntryListText {
+    font-size: 1em;
+    padding: 15px;
+  }
+}
