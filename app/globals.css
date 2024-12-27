@@ -1,105 +1,104 @@
-@media (max-width: 600px) {
-  .header_logo .header_logo_image{
-    width: 150px;
-  }
-  header{
-    min-height: 70px;
-    padding: 2px;
-    border-bottom: 1px solid silver;
-    padding: 2px;
-    display:  flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header .nav_button{
-    display: none;
-  }
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --hover-color: #ff6600; /* ホバー時の文字色 */
+  --header-height: 70px;
+}
 
-  .nav_menu a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
   }
 }
-@media (min-width: 601px){
-  header {
-    border-bottom: 1px solid silver;
-    padding: 2px;
-    display:  flex;
-    justify-content: space-between;
-    align-items: center;
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
   }
-  
-  .header_logo:hover{
+}
+
+/* ヘッダー共通スタイル */
+header {
+  min-height: var(--header-height);
+  padding: 2px;
+  border-bottom: 1px solid silver;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ナビゲーションリンクの共通スタイルを適用 */
+.nav_menu a,
+.nav_button a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/*モバイル表示(600px以下)*/
+@media (max-width: 600px) {
+  .header_logo .header_logo_image {
+    width: 150px;
+  }
+  header .nav_button {
+    display: none;
+  }
+  .nav_menu {
+    display: block;
+  }
+  .nav_menu a {
+    /* ナビゲーションメニューのリンクスタイル */
+    /* 共通のナビゲーションリンクスタイルを適用 */
+  }
+}
+
+
+/*PC表示(601px以上)*/
+@media (min-width: 601px) {
+  .header_logo:hover {
     transform: scale(1.05);
   }
-  
-  header .nav_menu{
+  header .nav_menu {
     display: none;
-    width: 80px;
   }
-  
   .nav_button {
     display: flex;
     gap: 20px;
     padding: 10px;
   }
-  
-  .nav_button a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+  .nav_button a{
+    /* 共通のナビゲーションリンクスタイルを適用 */
   }
-  
   .nav_button a:hover {
-    color: #ff6600;         /* ホバー時の文字色 */
-    transform: scale(1.1);  /* ホバー時に少し拡大 */
-  }
-  
-  :root {
-    --background: #ffffff;
-    --foreground: #171717;
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: #0a0a0a;
-      --foreground: #ededed;
-    }
-  }
-  
-  html,
-  body {
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
-  
-  body {
-    color: var(--foreground);
-    background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    html {
-      color-scheme: dark;
-    }
+    color: var(--hover-color);
+    transform: scale(1.1);
   }
 }
