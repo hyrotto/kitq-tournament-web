@@ -1,13 +1,16 @@
-'use client';
-
 import "./globals.css";
-import { useState, useEffect } from "react";
 // UIコンポーネント
 import {
   UIProvider, 
   Box,
   Link,
   NativeImage,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  Button,
+  ChevronIcon,
 } from "@yamada-ui/react"
 
 // ルートコンポーネント
@@ -16,25 +19,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // clientでの初期レンダリングを実行するために、初期値にnullを設定
-  const [isSmallScreen, setIsSmallScreen] = useState<boolean | null>(null); 
-
-  // 画面のリサイズに応じて状態を更新
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 650);
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  if (isSmallScreen === null) {
-    return null; 
-  }
-
   return (
     <html lang="ja">
       <body>
@@ -42,27 +26,32 @@ export default function RootLayout({
           <header>
             <Link  className="header_logo" href="/" >
               <NativeImage 
+                className="header_logo_image"
                 src="/大会ロゴ_モック.png" 
                 w = "40" 
                 alt=""
                 p = "2"
               />
             </Link>
-            {!isSmallScreen ? (
-                <Box className="nav_button">
-                  <Link href="/outline">大会概要</Link>
-                  <Link href="/entry">エントリー</Link>
-                  <Link href="/about_us">キャラクター紹介</Link>
-                  <Link href="/info">お知らせ</Link>
-                </Box>
-              ) : (
-                <Box className="nav_button">
-                  <Link href="/outline">大会概要</Link>
-                  <Link href="/entry">エントリー</Link>
-                  <Link href="/about_us">キャラクター紹介</Link>
-                  <Link href="/info">お知らせ</Link>
-                </Box>
-              )}
+            <Box className="nav_button">
+              <Link href="/outline">大会概要</Link>
+              <Link href="/entry">エントリー</Link>
+              <Link href="/about_us">キャラクター紹介</Link>
+              <Link href="/info">お知らせ</Link>
+            </Box>
+            <span className="nav_menu">
+              <Menu>
+                <MenuButton as={Button} rightIcon={<ChevronIcon fontSize="xl" />}>
+                  メニュー
+                </MenuButton>
+                <MenuList>
+                  <MenuItem><Link href="/outline">大会概要</Link></MenuItem>
+                  <MenuItem><Link href="/entry">エントリー</Link></MenuItem>
+                  <MenuItem><Link href="/about_us">キャラクター紹介</Link></MenuItem>
+                  <MenuItem><Link href="/info">お知らせ</Link></MenuItem>
+                </MenuList>
+              </Menu>
+            </span>
           </header>
           {children}
           <footer>
