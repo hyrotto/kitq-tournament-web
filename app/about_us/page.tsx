@@ -1,18 +1,54 @@
 import React from "react";
+import styles from "./page.module.css"
 import {
-  UIProvider,
-  NativeImage
+  NativeImage,
+  Container,
+  Heading,
+  Text
 } from "@yamada-ui/react"
 
-export default async function AboutUs() {
+export default async function Entry() {
     return (
-      <div>
-        <h1>キャラクター紹介</h1>
-        <NativeImage
-          src="/cute_cat.png" 
-          h = "300"
-        />
-        <p>ジャック君 (17)</p>
+      <div className={styles.container}>
+        <h1 className={styles.TitleText}>キャラクター紹介</h1>
+        <div className={styles.CharacterWrapper}>
+          <NativeImage
+            src="/Character_King_transparent.png"
+            className={styles.CharacterImage}
+          />
+          <div className={styles.CharacterDescription}>
+          <h1 className={styles.CharacterNameText}>キングくん</h1>
+            <Text>
+              ここにKINGくんの説明テキストを追加。ここにKINGくんの説明テキストを追加。ここにKINGくんの説明テキストを追加。ここにKINGくんの説明テキストを追加。
+            </Text>
+          </div>
+        </div>
+
+        <div className={styles.CharacterWrapper}>
+          <div className={styles.CharacterDescription}>
+          <h1 className={styles.CharacterNameText}>クイーンちゃん</h1>
+            <Text>
+              ここにクイーンちゃんのテキストを追加。ここにクイーンちゃんのテキストを追加。ここにクイーンちゃんのテキストを追加。ここにクイーンちゃんのテキストを追加。
+            </Text>
+          </div>
+          <NativeImage
+            src="/Character_Queen_transparent.png"
+            className={styles.CharacterImage}
+          />
+        </div>
+
+        <div className={styles.CharacterWrapper}>
+          <NativeImage
+            src="/cute_cat.png"
+            className={styles.CharacterImage}
+          />
+          <div className={styles.CharacterDescription}>
+          <h1 className={styles.CharacterNameText}>ジャックくん</h1>
+            <Text>
+              ここにジャック君の説明テキストを追加ここにジャック君の説明テキストを追加ここにジャック君の説明テキストを追加ここにジャック君の説明テキストを追加ここにジャック
+            </Text>
+          </div>
+        </div>
       </div>
     );
   }
