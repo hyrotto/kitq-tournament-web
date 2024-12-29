@@ -1,0 +1,60 @@
+.container {
+  --text-color: #333;
+  --button-bg-color: #ff6600;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.TitleText {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 10px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.CharacterWrapper {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.CharacterImage{
+  max-width: 400px;
+}
+
+.CharacterDescription {
+  max-width: 500px;
+}
+
+.CharacterNameText{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .TitleText{
+    font-size: 2rem;
+  }
+  .CharacterWrapper {
+    align-items: center;
+    gap: 20px;
+  }
+  .CharacterDescription {
+    margin-left: 0;
+  }
+  .CharacterImage {
+    max-width: 140px;
+  }
+  .CharacterNameText{
+    font-size: 2rem;
+  }
+}
