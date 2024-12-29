@@ -9,6 +9,7 @@ import {
   Th,
   Td,
 } from "@yamada-ui/react"
+import { Slider } from "./slider";
 
 export default async function Outline() {
   return (
@@ -75,6 +76,11 @@ export default async function Outline() {
           </Tbody>
         </NativeTable>
       </TableContainer>
+
+      <h1 className={styles.SubTitleText}>大会で採用したクイズのルール</h1>
+      <div className={styles.sliderContainer}>
+        <Slider/>
+      </div>
     </div>
   );
 }
