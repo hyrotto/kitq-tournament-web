@@ -9,9 +9,27 @@ import {
   Th,
   Td,
 } from "@yamada-ui/react"
-import { Slider } from "./slider";
+import SimpleCarousel from "./caroucel";
 
 export default async function Outline() {
+  const slides = [
+    {
+      id:1 ,
+      src:"https://www.pakutaso.com/shared/img/thumb/shikun20220402_114719-2_TP_V.jpg",
+      alt:"かわいい猫の写真"
+    },
+    {
+      id:2 ,
+      src:"https://www.pakutaso.com/shared/img/thumb/shikun20220402_122123_TP_V.jpg",
+      alt:"かわいい猫の写真"
+    },
+    {
+      id:3 ,
+      src:"https://www.pakutaso.com/shared/img/thumb/sikun_20220402-180657-2_TP_V.jpg",
+      alt:"かわいい猫の写真"
+    }
+  ]
+
   return (
     <div className={styles.container}>
       <h1 className={styles.TitleText}>大会概要</h1>
@@ -78,9 +96,14 @@ export default async function Outline() {
       </TableContainer>
 
       <h1 className={styles.SubTitleText}>大会で採用したクイズのルール</h1>
-      <div className={styles.sliderContainer}>
-        <Slider/>
-      </div>
+      
+        <SimpleCarousel 
+          slides={slides}
+          autoPlayInterval={1000000} // 自動再生の間隔（ミリ秒）
+          showArrows={true}      // 矢印ナビゲーションの表示
+          showIndicators={true}  // インジケーターの表示
+        />
+      
     </div>
   );
 }
