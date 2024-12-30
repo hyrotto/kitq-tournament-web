@@ -54,20 +54,12 @@
 }
 
 .sliderContainer {
-  width: 80%; 
-  max-width: 1000px;
-  margin: 20px auto;
+  width: 100%; 
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
-  padding-bottom: 80px;
+  padding: 10px;
 
-}
-
-.slideImg {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
 }
 
 /* レスポンシブデザイン */
@@ -85,7 +77,7 @@
     size: "sm";
   }
   .sliderContainer {
-    padding-bottom: 40px;
+    padding-bottom: 5px;
 }
 }
 
