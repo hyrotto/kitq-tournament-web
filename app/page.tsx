@@ -2,7 +2,8 @@ import styles from "./page.module.css";
 import {
   NativeImage
 } from "@yamada-ui/react"
-
+import NewsList from "./info/NewsList";
+import newsData from "./NewsList.json";
 export default function Home() {
   const eventDate = new Date('2025-3-2'); // 大会の日付
   const today = new Date();
@@ -18,13 +19,7 @@ export default function Home() {
       />
       
       <div className={styles.infoBox}>
-        <ul>
-          <li>お知らせ1</li>
-          <li>お知らせ2</li>
-          <li>お知らせ3</li>
-          <li>お知らせ4</li>
-          <li>お知らせ5</li>
-        </ul>
+        <NewsList newsData={newsData} />
       </div>
 
       <div className={styles.countdown}>
