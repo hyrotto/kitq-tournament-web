@@ -2,6 +2,7 @@
 .page {
   --text-color: #333;
   --border-color: #ccc;
+  --background-color: #ffffff
   --countdown-text-size: 3rem;
   --countdown-days-size: 10rem;
   --countdown-other-size: 2rem;
@@ -11,6 +12,7 @@
   justify-content: space-around;
   align-items: center;
   height: 100vh;
+  background: var(--background-color);
 }
 
 .main_illust {
