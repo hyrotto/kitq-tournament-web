@@ -1,0 +1,79 @@
+.container {
+  --text-color: #333333;
+  --hover-color: #ff6600;
+  --table-header-color: #f0f0f0;
+  --table-header-text-color: #777777;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.TitleText {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 10px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.InfomationContainer {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 800px;
+}
+
+.InfomationTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.InfomationTable th {
+  padding: 15px;
+}
+.InfomationTable td {
+  padding: 10px;
+}
+
+.InfomationTable th {
+  font-weight: bold;
+  background-color: var(--table-header-color)
+}
+
+.newsDate {
+  width: 80px;
+  font-size: 1.0rem;
+  color: var(--table-header-text-color);
+  white-space: nowrap;
+}
+
+.tableNewsItem {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  padding: 5px 0;
+}
+
+.tableNewsItem:hover {
+  color: var(--hover-color);
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .InfomationContainer {
+    width: 95%;
+  }
+  .TitleText{
+    font-size: 2.5rem;
+  }
+  .InfomationTable th {
+    padding: 10px;
+  }
+  .newsDate{
+      width: 70px;
+  }
+}
