@@ -27,7 +27,7 @@ export default function RootLayout({
             <Link  className="header_logo" href="/" >
               <NativeImage 
                 className="header_logo_image"
-                src="/大会ロゴ_モック.png" 
+                src="/Icon.png" 
                 w = "40" 
                 alt=""
                 p = "2"

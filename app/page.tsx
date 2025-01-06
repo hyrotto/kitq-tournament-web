@@ -14,8 +14,8 @@ export default function Home() {
     <div className={styles.page}>
       <NativeImage
         className={styles.main_illust}
-        src="大会メインイラスト_モック.png"
-        h="500"
+        src="Chara_main.png"
+        h="600"
       />
       
       <div className={styles.infoBox}>
