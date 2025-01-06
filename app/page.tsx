@@ -5,7 +5,7 @@ import {
 import NewsList from "./info/NewsList";
 import newsData from "./NewsList.json";
 export default function Home() {
-  const eventDate = new Date('2025-3-2'); // 大会の日付
+  const eventDate = new Date('2025-3-20'); // 大会の日付
   const today = new Date();
   const diffTime = eventDate.getTime() - today.getTime();
   const remainingDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); // 日数に変換
