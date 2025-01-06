@@ -56,7 +56,7 @@ export default function RootLayout({
           {children}
           <footer>
               <Box className="footer" p="4" bg="gray.200" textAlign="center">
-                  <p>九州工業大学 クイズサークル Q-thch</p>
+                  <p>九州工業大学 クイズサークル Q-tech</p>
               </Box>
           </footer>
         </UIProvider>
