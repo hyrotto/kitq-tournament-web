@@ -15,6 +15,10 @@ footer {
   height: 70px;
   position: absolute; /*②絶対位置*/
 }
+.twitter {
+  position: absolute;
+  margin-left: 45%;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
