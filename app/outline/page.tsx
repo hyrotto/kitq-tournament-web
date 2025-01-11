@@ -38,10 +38,10 @@ export default async function Outline() {
         <iframe src="/企画書草案_モック.pdf"></iframe>
       </div>
       <h1 className={styles.SubTitleText}>例題</h1>
-      <TableContainer className={styles.ExampleTable}>
+      <TableContainer className={styles.ExampleTableContainer}>
         <NativeTable
+          className={styles.ExampleTable}
           size="xl"
-          variant="striped"
           withColumnBorders
           withBorder
           highlightOnHover
