@@ -1,15 +1,9 @@
 :root {
-  --background: #ffffff;
+  --header-background-color: #ffb93d;
+  --background-color: #ffca6ec0;
   --foreground: #171717;
   --hover-color: #ff6600; /* ホバー時の文字色 */
   --header-height: 70px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 html,
@@ -20,7 +14,6 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -43,9 +36,15 @@ a {
   }
 }
 
+.UIprovider_inner_container {
+  background-color: var(--background-color);
+  height: 100%;
+}
+
 /* ヘッダー共通スタイル */
 header {
   min-height: var(--header-height);
+  background-color: var(--header-background-color);
   padding: 2px;
   border-bottom: 1px solid silver;
   display: flex;
