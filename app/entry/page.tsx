@@ -13,7 +13,7 @@ export default async function Entry() {
         </div>
         ↓エントリーフォームはこちら
         <Link
-          href="https://docs.google.com/forms/d/e/1FAIpQLSe_ToH3hv9i6y6NI0ajJ9fAj2xTYJRLwMEqZeRAo2XeptMXQA/viewform?usp=header"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdJX-ErJwd6tjQAhSxqutMy9effd82cYCaIZR90ME6AFmBogg/viewform?usp=header"
           target="_blank"
           className={styles.EntryButton}
           >
@@ -23,7 +23,7 @@ export default async function Entry() {
         <div className={styles.EntryListText}>
           エントリーリストは
           <Link
-            href="https://docs.google.com/spreadsheets/d/1VEu7CzN9mjwQEcQcd3rNAJojxx6lh-nLl2yT6H2_Aa8/edit?usp=drive_link"
+            href="https://docs.google.com/spreadsheets/d/12sHQwJy-axqBmzdDK0YjnIEbeByvFAiORQ_jGZxHXww/edit?usp=sharing"
             target="_blank"
             className={styles.EntryListURL}
           >
