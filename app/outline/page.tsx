@@ -37,6 +37,7 @@ export default async function Outline() {
       <div className={styles.proposal}>
         <iframe src="/企画書草案_モック.pdf"></iframe>
       </div>
+      <span>企画書準備中</span>
       <h1 className={styles.SubTitleText}>例題</h1>
       <TableContainer className={styles.ExampleTableContainer}>
         <NativeTable

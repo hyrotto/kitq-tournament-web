@@ -4,6 +4,7 @@
   --table-header-color: #ffb83d;
   --table-header-text-color: #777777;
   --table-background-color: #bebebe50;  
+  --red-color: red;
 
   display: flex;
   flex-direction: column;
@@ -37,12 +38,17 @@
 }
 
 .proposal {
+  display:none;
   width: 95%;
   max-width: 1000px;
   height: 700px;
   overflow: hidden;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+
+.container span{
+  color: var(--red-color);
 }
 
 .proposal iframe {
