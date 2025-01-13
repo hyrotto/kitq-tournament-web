@@ -4,7 +4,7 @@
   --button-bg-color: #ff6600;
   --button-hover-bg-color: #a04000;
   --button-outline-color: #ff9900;
-  --border-color: #ccc;
+  --border-color: #797979;
 
   display: flex;
   flex-direction: column;
@@ -16,6 +16,17 @@
 
 .TitleText {
   font-size: 3rem;
+  font-weight: bold;
+  padding: 10px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.SubTitleText {
+  width: 80%;
+  border-top: 1px solid var(--border-color);
+  margin-top: 60px;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 10px;
   color: var(--text-color);
@@ -59,11 +70,28 @@
   font-size: 1.1em;
   padding: 20px;
   margin-top: 20px;
-  border-top: 1px solid var(--border-color);
   transition: color 0.3s ease, border-bottom 0.3s ease;
   display: inline-block;
   color: var(--text-color);
 }
+
+.PrivacyPolicy {
+  width: 75%;
+  padding: 20px;
+}
+
+.PrivacyPolicyTitle{
+  border-bottom: #333;
+  font-weight: bold;
+  text-decoration:underline;
+}
+
+.PrivacyPolicySection{
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+
+
 
 @media (max-width: 600px) {
   .TitleText {

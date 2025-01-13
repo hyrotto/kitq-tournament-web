@@ -1,8 +1,9 @@
 .container {
   --text-color: #333333;
   --hover-color: #ff6600;
-  --table-header-color: #f0f0f0;
+  --table-header-color: #ffb83d;
   --table-header-text-color: #777777;
+  --table-background-color: #bebebe50;  
 
   display: flex;
   flex-direction: column;
@@ -22,7 +23,6 @@
 }
 
 .InfomationContainer {
-  margin-top: 20px;
   width: 90%;
   max-width: 800px;
 }
@@ -30,6 +30,7 @@
 .InfomationTable {
   width: 100%;
   border-collapse: collapse;
+  background-color: var(--table-background-color);
 }
 
 .InfomationTable th {

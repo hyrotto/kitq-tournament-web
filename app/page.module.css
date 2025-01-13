@@ -2,17 +2,17 @@
 .page {
   --text-color: #333;
   --border-color: #ccc;
-  --background-color: #ffffff
   --countdown-text-size: 3rem;
   --countdown-days-size: 10rem;
   --countdown-other-size: 2rem;
+  --table-header-text-color: #777777;
+  --table-background-color: #bebebe50;  
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 100vh;
-  background: var(--background-color);
 }
 
 .main_illust {
@@ -25,13 +25,16 @@
 }
 
 .infoBox {
+  padding-left: 25px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--table-background-color);
   height: 200px;
-  min-height: 100px;
+  min-height: 150px;
   width: 90%;
   max-width: 900px;
   overflow-y: scroll;
   border: 1px solid var(--border-color);
-  padding: 10px;
   margin-bottom: 20px;
 }
 
