@@ -95,7 +95,7 @@ export default async function Entry() {
           </p>
           <p className={styles.PrivacyPolicySection}>
             個人情報の開示・訂正・追加・削除等のお申出、ご意見、ご質問、苦情、その他個人情報の取扱いに関するお問い合わせは、下記の連絡先にて受け付けます。<br />
-            メール：〇〇〇〇〇@gmail.com
+            メール：quiz.kyutech@gmail.com
           </p>
           <p className={styles.PrivacyPolicyTitle}>
             プライバシーポリシーの変更について
