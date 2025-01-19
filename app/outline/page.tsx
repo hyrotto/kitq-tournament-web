@@ -97,14 +97,14 @@ export default async function Outline() {
       </TableContainer>
 
       <h1 className={styles.SubTitleText}>各ラウンドのルール</h1>
-      
+      <div className={styles.sliderContainer}>
         <SimpleCarousel 
           slides={slides}
           autoPlayInterval={1000000} // 自動再生の間隔（ミリ秒）
           showArrows={true}      // 矢印ナビゲーションの表示
           showIndicators={true}  // インジケーターの表示
         />
-      
+      </div>
     </div>
   );
 }
