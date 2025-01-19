@@ -13,6 +13,18 @@ import {
   ChevronIcon,
 } from "@yamada-ui/react"
 
+import {Rampart_One,M_PLUS_2} from 'next/font/google';
+
+const RampartOneFont = Rampart_One({
+  weight: "400",
+  subsets: ["latin"],
+});
+const mPuls2Font = M_PLUS_2({
+  weight: "400",
+  subsets: ["latin"],
+});
+
+
 // ルートコンポーネント
 export default function RootLayout({
   children,
@@ -21,10 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>
+      <body className={mPuls2Font.className}>
         <UIProvider>
           <div className="UIprovider_inner_container">
-            <header>
+            <header className={RampartOneFont.className}>
               <Link  className="header_logo" href="/" >
                 <NativeImage 
                   className="header_logo_image"
