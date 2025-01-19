@@ -69,9 +69,11 @@ export default function RootLayout({
           <footer>
             <Box className="footer" p="4" bg="gray.200" textAlign="center">
               <p>九州工業大学 クイズサークル Q-thch</p>
-              <Link href="https://x.com/KingQueenCup">
-                <TwitterIcon className="twitter" />
-              </Link>
+              <div className="icon">
+                <Link href="https://x.com/KingQueenCup">
+                  <img src="/TwitterIcon.png" />
+                </Link>
+              </div>
             </Box>
           </footer>
         </UIProvider>
