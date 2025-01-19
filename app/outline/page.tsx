@@ -96,7 +96,7 @@ export default async function Outline() {
         </NativeTable>
       </TableContainer>
 
-      <h1 className={styles.SubTitleText}>大会で採用したクイズのルール</h1>
+      <h1 className={styles.SubTitleText}>各ラウンドのルール</h1>
       
         <SimpleCarousel 
           slides={slides}
