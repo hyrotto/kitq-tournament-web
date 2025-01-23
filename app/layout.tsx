@@ -71,7 +71,7 @@ export default function RootLayout({
               <p>九州工業大学 クイズサークル Q-thch</p>
               <div className="icon">
                 <Link href="https://x.com/KingQueenCup">
-                  <img src="/TwitterIcon.png" />
+                  <img className="X" src="/X_black.png" />
                 </Link>
               </div>
             </Box>
