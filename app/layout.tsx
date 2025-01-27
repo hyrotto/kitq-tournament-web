@@ -26,19 +26,6 @@ const mPuls2Font = M_PLUS_2({
 });
 
 
-// ルートコンポーネント
-import { Box, Button, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
-import { ChevronIcon } from '@chakra-ui/icons';
-import Link from 'next/link';
-import { NativeImage } from '@/components/NativeImage';
-import { UIProvider } from '@/components/UIProvider';
-import { M_PLUS_2 } from 'next/font/google';
-import { Rampart_One } from 'next/font/google';
-
-const mPuls2Font = M_PLUS_2({ subsets: ['latin'] });
-const RampartOneFont = Rampart_One({ weight: '400', subsets: ['latin'] });
-
-
 export default function RootLayout({
   children,
 }: Readonly<{
