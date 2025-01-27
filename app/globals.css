@@ -18,6 +18,20 @@ footer {
   position: absolute; /*②絶対位置*/
   background-color: var(--background-color);
 }
+.twitter {
+  position: absolute;
+  margin-left: 45%;
+}
+.icon {
+  margin-bottom: 10px;
+  margin-left: 90%;
+  width: 30px;
+  height: 30px;
+}
+.X {
+  width: 30px;
+  height: 30px;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
