@@ -37,11 +37,12 @@ export default async function Outline() {
       <div className={styles.proposal}>
         <iframe src="/企画書草案_モック.pdf"></iframe>
       </div>
+      <span>企画書準備中</span>
       <h1 className={styles.SubTitleText}>例題</h1>
-      <TableContainer className={styles.ExampleTable}>
+      <TableContainer className={styles.ExampleTableContainer}>
         <NativeTable
+          className={styles.ExampleTable}
           size="xl"
-          variant="striped"
           withColumnBorders
           withBorder
           highlightOnHover
@@ -95,15 +96,15 @@ export default async function Outline() {
         </NativeTable>
       </TableContainer>
 
-      <h1 className={styles.SubTitleText}>大会で採用したクイズのルール</h1>
-      
+      <h1 className={styles.SubTitleText}>各ラウンドのルール</h1>
+      <div className={styles.sliderContainer}>
         <SimpleCarousel 
           slides={slides}
           autoPlayInterval={1000000} // 自動再生の間隔（ミリ秒）
           showArrows={true}      // 矢印ナビゲーションの表示
           showIndicators={true}  // インジケーターの表示
         />
-      
+      </div>
     </div>
   );
 }

@@ -1,9 +1,11 @@
 :root {
-  --background: #ffffff;
+  --header-background-color: #ffb93d;
+  --background-color: #ffca6ec0;
   --foreground: #171717;
   --hover-color: #ff6600; /* ホバー時の文字色 */
   --header-height: 70px;
 }
+
 
 .wrapper {
   min-height: calc(100vh - 70px); /*①高さの最小値*/
@@ -14,6 +16,7 @@ footer {
   width: 100%;
   height: 70px;
   position: absolute; /*②絶対位置*/
+  background-color: var(--background-color);
 }
 .twitter {
   position: absolute;
@@ -40,12 +43,10 @@ footer {
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -68,9 +69,15 @@ a {
   }
 }
 
+.UIprovider_inner_container {
+  background-color: var(--background-color);
+  height: 100%;
+}
+
 /* ヘッダー共通スタイル */
 header {
   min-height: var(--header-height);
+  background-color: var(--header-background-color);
   padding: 2px;
   border-bottom: 1px solid silver;
   display: flex;

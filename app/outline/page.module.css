@@ -1,6 +1,10 @@
 .container {
   --text-color: #333;
   --button-bg-color: #ff6600;
+  --table-header-color: #ffb83d;
+  --table-header-text-color: #777777;
+  --table-background-color: #bebebe50;  
+  --red-color: red;
 
   display: flex;
   flex-direction: column;
@@ -8,7 +12,6 @@
   min-height: 100vh;
   padding: 30px;
   box-sizing: border-box;
-  margin-bottom: 30px;
 }
 
 .TitleText {
@@ -28,12 +31,13 @@
   text-align: center;
 }
 
-.ExampleTable {
+.ExampleTableContainer {
   width: 90%;
   max-width: 800px;
 }
 
 .proposal {
+  display:none;
   width: 95%;
   max-width: 1000px;
   height: 700px;
@@ -42,10 +46,24 @@
   margin-bottom: 30px;
 }
 
+.container span{
+  color: var(--red-color);
+}
+
 .proposal iframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.ExampleTable{
+  background-color: var(--table-background-color);
+  width: 100%;
+}
+
+.ExampleTable th {
+  font-weight: bold;
+  background-color: var(--table-header-color)
 }
 
 .tableTd {
@@ -54,7 +72,7 @@
 }
 
 .sliderContainer {
-  width: 100%; 
+  width: 70%; 
   margin-bottom: 30px;
   display: flex;
   align-items: center;
@@ -77,6 +95,7 @@
     size: "sm";
   }
   .sliderContainer {
+    width: 100%;
     padding-bottom: 5px;
 }
 }

@@ -17,7 +17,8 @@ export default async function Entry() {
           <div className={styles.CharacterDescription}>
           <h1 className={styles.CharacterNameText}>キングくん</h1>
             <Text>
-              ここにKINGくんの説明テキストを追加。ここにKINGくんの説明テキストを追加。ここにKINGくんの説明テキストを追加。ここにKINGくんの説明テキストを追加。
+              とある王国を治める知識豊かな王。豊富な知識と経験を生かした公正な政治で、すべての民から深く愛されている。クイーンちゃんと共に和やかで幸せな日々を送っている。<br />
+              早押しボタンは親指で押す。得意ジャンルは「文学」と「音楽」。
             </Text>
           </div>
         </div>
@@ -26,7 +27,8 @@ export default async function Entry() {
           <div className={styles.CharacterDescription}>
           <h1 className={styles.CharacterNameText}>クイーンちゃん</h1>
             <Text>
-              ここにクイーンちゃんのテキストを追加。ここにクイーンちゃんのテキストを追加。ここにクイーンちゃんのテキストを追加。ここにクイーンちゃんのテキストを追加。
+              キングくんの妻で女王。もともとは聡明なキングくんに一目惚れした王国の平民。そのはつらつとした性格は太陽のようだとも形容される。<br />
+              早押しボタンは人差し指で押す。得意ジャンルは「芸能」と「雑学」。
             </Text>
           </div>
           <NativeImage

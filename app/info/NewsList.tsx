@@ -27,7 +27,6 @@ const NewsList: React.FC<Props> = ({newsData}) => {
         <TableContainer className={styles.InfomationContainer}>
         <NativeTable
           className={styles.InfomationTable}
-          variant="striped"
           size="lg"
         >
           <Thead>
