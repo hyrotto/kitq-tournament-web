@@ -15,19 +15,9 @@ export default async function Outline() {
   const slides = [
     {
       id:1 ,
-      src:"https://www.pakutaso.com/shared/img/thumb/shikun20220402_114719-2_TP_V.jpg",
+      src:"/Sign_preparing.png",
       alt:"かわいい猫の写真"
     },
-    {
-      id:2 ,
-      src:"https://www.pakutaso.com/shared/img/thumb/shikun20220402_122123_TP_V.jpg",
-      alt:"かわいい猫の写真"
-    },
-    {
-      id:3 ,
-      src:"https://www.pakutaso.com/shared/img/thumb/sikun_20220402-180657-2_TP_V.jpg",
-      alt:"かわいい猫の写真"
-    }
   ]
 
   return (
