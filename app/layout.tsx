@@ -69,7 +69,7 @@ export default function RootLayout({
             {children}
             <footer>
                 <Box className="footer" p="4" bg="gray.200" textAlign="center">
-                    <p>九州工業大学 クイズサークル Q-tech</p>
+                    <p>九工大クイズ研究会 Q-tech</p>
                     <div className="icon">
                       <Link href="https://x.com/KingQueenCup">
                         <img className="X" src="/X_black.png" alt="X(旧Twitter)"/>
