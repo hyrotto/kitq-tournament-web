@@ -73,8 +73,9 @@ export default async function Outline() {
               <Td className={styles.tableTd}>
               借りたものを持ち主に戻すことを表す2 字熟語「返済」の「返（へん）」に送り仮名「す」をつけると「かえす」と読みますが、「済（さい）」に送り仮名「す」をつけると何と読むでしょう？
               </Td>
-              <Td className={styles.tableTd}>わたす【○：なす】</Td>
+              <Td className={styles.tableTd}>わたす<br></br>【○：なす】</Td>
             </Tr>
+
           </Tbody>
         </NativeTable>
       </TableContainer>

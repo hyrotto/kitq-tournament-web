@@ -33,7 +33,6 @@
 
 .ExampleTableContainer {
   width: 90%;
-  max-width: 800px;
 }
 
 .proposal {
@@ -103,5 +102,12 @@
 @media (max-width: 480px) {
   .proposal {
     height: 400px;
+  }
+  .ExampleTableContainer {
+    width: 100%;
+  }
+  .ExampleTable td,
+  .ExampleTable th {
+    font-size: 0.7rem;
   }
 }
