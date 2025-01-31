@@ -6,7 +6,7 @@ export default async function NewsFirstPage() {
   return (
     <div className={styles.container}>
         <h1 className={styles.TitleText}>クイズ大会HP公開のお知らせ</h1>
-        <div className={styles.DateText}>2024年1月26日</div>
+        <div className={styles.DateText}>2024年1月31日</div>
       <div className={styles.DescriptionText}>
         <p>
         この度、King&Queen杯の会の公式ホームページを公開いたしました！
