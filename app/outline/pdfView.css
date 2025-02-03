@@ -1,0 +1,7 @@
+.no-google-font {
+    font-family: initial !important; /* ブラウザのデフォルトフォントに戻す */
+  }
+  
+  .no-google-font * { /* PDFビューア内の全ての子要素も対象にする */
+    font-family: initial !important;
+  }

@@ -8,13 +8,15 @@ function PDFviewer() {
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
     
     return(
-        <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js`}>
-            <Viewer
-                fileUrl="/King&Queen杯_企画書.pdf"
-                plugins={[defaultLayoutPluginInstance]}
-                localization={jp_JP as unknown as LocalizationMap}
-            />
-        </Worker>
+        <div className="no-google-font">
+            <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js`}>
+                <Viewer
+                    fileUrl="/King&Queen杯_企画書.pdf"
+                    plugins={[defaultLayoutPluginInstance]}
+                    localization={jp_JP as unknown as LocalizationMap}
+                />
+            </Worker>
+        </div>
     )
 }
 
