@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={mPuls2Font.className}>
+      <body>
         <UIProvider>
         <div className="UIprovider_inner_container">
             <header className={RampartOneFont.className}>
