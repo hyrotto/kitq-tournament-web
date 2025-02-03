@@ -10,6 +10,7 @@ import {
   Td,
 } from "@yamada-ui/react"
 import SimpleCarousel from "./caroucel";
+import PDFviewer from "./pdfView";
 
 export default async function Outline() {
   const slides = [
@@ -25,9 +26,8 @@ export default async function Outline() {
       <h1 className={styles.TitleText}>大会概要</h1>
       <h1 className={styles.SubTitleText}>本大会企画書</h1>
       <div className={styles.proposal}>
-        <iframe src="/企画書草案_モック.pdf"></iframe>
+        <PDFviewer/>
       </div>
-      <span>企画書準備中</span>
       <h1 className={styles.SubTitleText}>例題</h1>
       <TableContainer className={styles.ExampleTableContainer}>
         <NativeTable
