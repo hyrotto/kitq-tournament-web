@@ -8,7 +8,7 @@ export default async function Entry() {
     return (
       <div className={styles.container}>
         <h1 className={styles.TitleText}>エントリー</h1>
-        ↓エントリーフォームはこちら
+        エントリーは終了いたしました。
         <Link
           href="https://docs.google.com/forms/d/e/1FAIpQLSdJX-ErJwd6tjQAhSxqutMy9effd82cYCaIZR90ME6AFmBogg/viewform?usp=header"
           target="_blank"
