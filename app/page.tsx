@@ -29,9 +29,10 @@ export default function Home() {
       <div className={styles.countdown}>
         <h1 className={styles.text}>3月20日  大会当日まで</h1>
         <h1 className={styles.Ato}>あと</h1>
-        <h1 className={styles.days}>1</h1>
+        <h1 className={styles.days}>0</h1>
         <h1 className={styles.Nichci}>日</h1>
       </div>
+      <h1 className={styles.Toujitsu}>！！当日！！</h1>
     </div>
   );
 }

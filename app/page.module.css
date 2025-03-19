@@ -48,6 +48,7 @@
   position: relative;
   gap: 5px;
   margin: 50px;
+  margin-bottom: 5px;
 }
 .text {
   font-size: var(--countdown-text-size);
@@ -79,6 +80,12 @@
   color: var(--text-color);
 }
 
+.Toujitsu{
+  font-size: var(--countdown-text-size);
+  font-weight: bold;
+  color: var(--text-color);
+}
+
 @media (max-width: 768px) {
   .text {
     font-size: 2rem;
@@ -95,6 +102,10 @@
     font-size: 2rem;
     right: 25%;
     bottom: -0.5rem;
+  }
+  .Toujitsu{
+    font-size: 2rem;
+    margin-bottom: 30px;
   }
 }
 
@@ -114,5 +125,8 @@
     font-size: 1.5rem;
     right: 15%;
     bottom: 0rem;
+  }
+  .Toujitsu{
+    font-size: 1.5rem;
   }
 }
